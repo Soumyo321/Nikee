@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="cursor"></div>
+
+   <div id="main">
+    <div class="head-bar justify-between px-6 py-1 hidden lg:flex">
+        <div>
+            <img style="height: 30px;" class="px-2" src="assets/jordan-2.svg" alt="">
+        </div>
+        <div>
+            <p>Find a Store | Help | Join Us | Sign In </p>
+        </div>
+    </div>
+
+
+    <div class="header px-6">
+
+
+        <img style="height: 50px;" src="assets/nike-4-logo-svgrepo-com.svg" alt="logo" id="logo">
+
+
+        <div class="header-buttons">
+
+            <div class="dropdown" data-dropdown>
+                <button class="link underline-btn" data-dropdown-button>New & Featured</button>
+                <div class="dropdown-menu information-flex">
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>;
+                    <div>
+                        <div class="dropdown-heading">....</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">......</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Courses</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">JavaScript</a>
+                            <a href="#" class="link">CSS</a>
+                            <a href="#" class="link">React</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Blog</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Other</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Twitter</a>
+                            <a href="#" class="link">Newsletter</a>
+                            <a href="#" class="link">Discord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown" data-dropdown>
+                <button class="link underline-btn" data-dropdown-button>Men</button>
+                <div class="dropdown-menu information-flex">
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="# underline-btn" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>;
+                    <div>
+                        <div class="dropdown-heading">....</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">......</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Courses</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">JavaScript</a>
+                            <a href="#" class="link">CSS</a>
+                            <a href="#" class="link">React</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Blog</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Other</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Twitter</a>
+                            <a href="#" class="link">Newsletter</a>
+                            <a href="#" class="link">Discord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown" data-dropdown>
+                <button class="link underline-btn" data-dropdown-button>Women</button>
+                <div class="dropdown-menu information-flex">
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>;
+                    <div>
+                        <div class="dropdown-heading">....</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">......</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Courses</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">JavaScript</a>
+                            <a href="#" class="link">CSS</a>
+                            <a href="#" class="link">React</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Blog</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Other</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Twitter</a>
+                            <a href="#" class="link">Newsletter</a>
+                            <a href="#" class="link">Discord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown" data-dropdown>
+                <button class="link underline-btn" data-dropdown-button>Kids</button>
+                <div class="dropdown-menu information-flex">
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>;
+                    <div>
+                        <div class="dropdown-heading">....</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">......</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Courses</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">JavaScript</a>
+                            <a href="#" class="link">CSS</a>
+                            <a href="#" class="link">React</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Blog</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Other</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Twitter</a>
+                            <a href="#" class="link">Newsletter</a>
+                            <a href="#" class="link">Discord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown" data-dropdown>
+                <button class="link underline-btn" data-dropdown-button>Sale</button>
+                <div class="dropdown-menu information-flex">
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>;
+                    <div>
+                        <div class="dropdown-heading">....</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">......</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Courses</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">JavaScript</a>
+                            <a href="#" class="link">CSS</a>
+                            <a href="#" class="link">React</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Blog</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Other</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Twitter</a>
+                            <a href="#" class="link">Newsletter</a>
+                            <a href="#" class="link">Discord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="link underline-btn">Customes</a>
+            <a href="#" class="link underline-btn">SNKRS</a>
+        </div>
+</div>
+
+
+<div id="page">
+    <div id="nav">
+      
+        <div id="nav-part-3">
+            <div id="circle"></div>
+        </div>
+       
+    </div>
+    <h1>DON'T WASTE</h1>
+    <h3>YOUR ENERGY</h3>
+    <h5>Nike Peagasus 41</h5>
+    <video  src="https://duo-studio-v2.netlify.app/images/page1-video.mp4"  autoplay muted loop></video>
+</div>
+<div id="main">
+    
+    <div class="header-buttons-right flex" id="g1">
+        <!-- <input type="text" class="rounded"> -->
+
+        <div class="flex items-center rounded-lg bg-gray-100 shadow-sm">
+            <svg id="search-icon" class="h-6 w-6 text-gray-500 mr-2" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd" />
+            </svg>
+            <input type="text" id="search-input" class="input-hidden hidden lg:block w-20 focus:outline-none">
+        </div>
+
+
+
+        <span>cart</span>
+    </div>
+</div>
+
+
+<!-- <video src="https://assets .codepen.io/39255/output_960.mp4" playsinline="true" webkit-playsinline="true" preload="auto"
+muted="muted" class="video-background"></video> -->
+<video src="./assets/bg_output_960.mp4" playsinline="true" webkit-playsinline="true" preload="auto" muted="muted"
+    style="object-fit: cover;" class="video-background "></video>
+
+<!-- This is the container for video which is equal to 5 vh = 5 pages  -->
+<!-- So here you can add image with height of 1 vh or 1/2 vh -->
+<div id="container" class="relative">
+    <!-- <div class="h-[400vh]"></div> -->
+</div>
+
+<div class="bg-white h-[200vh] mt-[-100vh] z-10 text-white" id="g2">
+    <div class="max-w-3xl mx-auto text-center bg-gray-900 py-10">
+        <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white">
+            Nike <span class="text-yellow-500">Just Do It.</span>
+        </h2>
+    </div>
+
+    <div class="max-w-3xl mx-auto py-8">
+        <h3 class="text-4xl md:text-6xl lg:text-7xl font-bold ">
+            Store
+        </h3>
+    </div>
+</div>
+
+</div>
+
+   </div>
+    <!-- © 2024 Nike, Inc. All rights reserved
+
+    Guides
+    
+    Terms of Sale
+    
+    Terms of Use
+    
+    Nike Privacy Policy -->
+    <footer>
+        <div id="footer">
+            <h1>© 2024 Nike, Inc. All rights reserved</h1>
+            
+            <h1>Guide</h1>
+            
+            <h1>Terms of Sale</h1>
+            <h1>Terms of Use</h1>
+            <h1>Nike Privacy Policy</h1>
+            <!-- <h1></h1> -->
+
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Smooth scrolling using lenis -->
+    <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

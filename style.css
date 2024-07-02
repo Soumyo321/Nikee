@@ -1,0 +1,455 @@
+body {
+    margin: 0;
+  }
+  
+  * {
+    padding: 0;
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:black;
+  }
+  
+  .header {
+    position: relative;
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: .5rem; */
+    gap: 1rem;
+    font-size: large;
+  }
+  #cursor{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+
+    /* color change krega */
+    mix-blend-mode: difference;  
+    /* transition: all linear 0.1s ; */
+}
+
+  
+  .header-buttons {
+    /* position: relative; */
+    /* background-color: #F3F3F3; */
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    padding: .5rem;
+    gap: 1rem;
+    font-size: large;
+  }
+  
+  #logo {
+    /* position: absolute; */
+  top: 0px;
+  left: 0px;
+  }
+  
+  .link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #777;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 500;
+  }
+  
+  .dropdown.active > .link,
+  .link:hover {
+    color: black;
+    font-weight: 600;
+  }
+  /* for underline animation */
+  .underline-btn {
+    position: relative; /* Needed for positioning the underline */
+    border: none;
+    cursor: pointer; /* Indicate hover interaction */
+  }
+  
+  .underline-btn::after {
+    content: ""; /* Empty content for the underline */
+    position: absolute;
+    bottom: 0; /* Position underline at the bottom */
+    left: 0; /* Start from the left side */
+    width: 0; /* Initially no width */
+    height: 2px; /* Set underline height */
+    background-color: #000; /* Underline color */
+    transition: width 0.3s ease-in-out; /* Animation properties */
+  }
+  
+  .underline-btn:hover::after {
+    width: 100%; /* Expand underline on hover */
+    transition: width 0.3s ease-in-out; /* Animation properties */
+  }
+  
+  
+  
+  .dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    width: 100vw;
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    font-size: medium;
+  }
+  
+  .dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  .information-flex {
+    display: flex;
+    /* grid-template-columns: repeat(2, max-content); */
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+  
+  .login-form > input {
+    margin-bottom: .5rem;
+  }
+  
+  .input-hidden {
+    display: none !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    transition: all 0.5s ease-in-out !important; /* Adjust duration and easing as needed */
+  }
+  .input-visible {
+    display: flex !important; /* Or inline-flex if needed */
+    opacity: 1 !important;
+    width: 100% !important; /* Adjust width based on your element */
+  
+  }
+  
+  /* Header and nav bar  end  */
+  
+  
+  .video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+  }
+  
+  #container {
+    height: 500vh;
+    /* scroll-behavior:inherit; */
+  }
+
+
+#footer{
+    position:absolute;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 14px;
+    font-size: 16px;
+    font-weight: 580;
+    margin-left: 56px;
+    padding-bottom: 14vh;
+    
+}
+#footer>h1{
+    color: gray;
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#cursor{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+
+    /* color change krega */
+    mix-blend-mode: difference;  
+    /* transition: all linear 0.1s ; */
+}
+
+
+#main{
+    background-color: white;
+}
+
+#page{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: red; */
+    display:flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px
+
+}
+#nav-part-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+#nav-part-3 #circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+
+
+}
+
+#nav h4{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav h4:nth-child(1){
+    
+    border-bottom: 1.5px solid white;
+}
+#page h1{
+    font-size: 9vw;
+    font-weight: 500;
+    color: #111;
+    margin-top: 10vw;
+    margin-left: 16vw;
+
+}
+#page h3{
+    font-size: 7vw;
+    font-weight: 300;
+    color: #111;
+    /* margin-top: 10vw; */
+    margin-left: 26vw;
+
+}
+
+#page h5{
+    font-size: 6vw;
+    font-weight: 78;
+    color: #111;
+    /* margin-top: 10vw; */
+    margin-left: 26vw;
+
+}
+#page video{
+    /* background-color: red; 
+    */
+    /* margin-left: 20%; */
+    
+    position: relative;
+    margin-top: 23vw;
+    
+    width: 60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#page2{
+    /* background-color: red; */
+    min-height:100vh;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    z-index: 9;
+}
+
+#page2 h1{
+    font-size: 7vw;
+    color:#111;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+#page2-container{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+#page2-l{
+    /* background-color: blue; */
+    width: 38%;
+}
+
+#page2-r{
+    /* background-color: blue; */
+    width: 30%;
+}
+#page2-l h2{
+    font-size: 3vw;
+    font-weight: 70;
+   color:#111;
+
+}
+/* #page2-r h2{
+    font-size: 28px;
+    color: #fff;
+
+} */
+#page2-r p{
+    font-size: 23px;
+    font-weight: 40;
+   color:#111;
+}
+#page2-r button{
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 12%;
+    margin-left:7px;
+    border: none;
+    padding: 4px 0px;
+    background-color:  #EDBFFF;
+    color: #111;
+}
+
+#page3{
+    min-height: 160vh;
+    width: 100%;
+    /* position: relative; */
+    padding-top: 100px;
+    position: relative;
+    z-index: 9;
+}
+
+#page3 h1{
+    font-size: 6.5vw;
+    font-weight: 400;
+    margin-left: 100px;
+    color: #fff;
+}
+#page3 #page3-p1 #img1{
+    margin-top: 110px;
+    margin-left:23px;
+    width: 40%;
+    position: relative;
+}
+#page3 #page3-p1 #img2{
+    margin-top: 30px;
+    height: 70vh;
+    margin-right:22px;
+    /* width: 40%; */
+    position: relative;
+}
+#page3 #page3-p1{
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    /* position: relative; */
+    position: relative;
+    z-index: 9;
+    padding: 100px ;
+}
+
+#elem{
+    color: #fff;
+   
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#elem img{
+    
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+
+}
+#elem img:nth-child(1){
+    margin-left:43px;
+    height: 43vh;
+    left:0%;
+}
+#elem img:nth-child(3){
+    margin-left:89px;
+    height: 56vh;
+    width: 24vw;
+    right:8%;
+   
+}
+#text{
+    /* height: 34px; */
+    /* background-color: blue; */
+    height: 140px;
+    overflow: hidden;
+}
+#elem h1{
+    font-size: 8.3vw;
+    transition: all ease-out 0.5s;
+    /* color: aqua; */
+/* strategy lekha ta smoothly opr niche hbe */
+}
+#elem:hover h1{
+    transform: translateY(-100%);
+    color:aqua;
+
+}
+#elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
